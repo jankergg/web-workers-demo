@@ -17,7 +17,7 @@ this.onmessage = function(e) {
       imageData.data[i * 4 + 2] = pixel[2];
       imageData.data[i * 4 + 3] = pixel[3];
     }
-    postMessage(imageData);
+    this.postMessage(imageData);
   } catch (e) {
     function ManipulationException(message) {
       this.name = "ManipulationException";
